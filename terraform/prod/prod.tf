@@ -28,7 +28,7 @@ resource "aws_instance" "instance_1" {
     provisioner "remote-exec" {
         inline = [
           "sudo service docker restart",
-          "docker run -d christhewintle/devops-class-node-app-with-config"
+          "docker run -d -p 8080:8080 christhewintle/devops-class-node-app-with-config"
         ]
     }
 }
