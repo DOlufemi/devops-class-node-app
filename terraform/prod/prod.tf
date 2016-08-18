@@ -17,7 +17,7 @@ resource "aws_instance" "instance_1" {
     security_groups = ["chris-sec-group"]
 
     tags {
-        Name = "Instance Created by Terraform - Number 1"
+        Name = "NodeJS DevOps Class App Example"
     }
 
     connection {
